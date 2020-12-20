@@ -33,13 +33,16 @@ echo '
                   <a class="nav-link" href="orcamento.php">Orçamento</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Imagens</a>
+                  <a class="nav-link" href="contato.php">Contato</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="logout.php">Sair</a>
                 </li>
               </ul>
               <a class="nav-link" href="login.php">Entrar</a>
-              <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+              <form action="resultado_pesquisa.php" method="POST" target="gravar" class="form-inline mt-2 mt-md-0" >
+                <input class="form-control mr-sm-2" type="text" name="buscar" placeholder="Pesquisar..." aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
               </form>
             </div>
           </nav>
